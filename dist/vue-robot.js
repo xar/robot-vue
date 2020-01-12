@@ -1,0 +1,2 @@
+var t,e=(t=require("vue"))&&"object"==typeof t&&"default"in t?t.default:t,n=require("robot3"),o=require("@vue/composition-api");exports.vueRobot=function(t){var r=o.ref(t.current),u=o.ref(t.context()),c={setState:function(t){e.nextTick(function(){r.value=t})},state:r},i=c.setState,a=c.state,s={setContext:function(t){u.value=t},context:u},f=s.setContext;return{context:s.context,send:n.interpret(t,function(t){i(t.machine.current),f(t.context)}).send,state:a}};
+//# sourceMappingURL=vue-robot.js.map
