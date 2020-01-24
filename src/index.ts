@@ -2,9 +2,9 @@ import Vue from 'vue';
 import {interpret} from "robot3";
 import {ref} from "@vue/composition-api";
 
-export const vueRobot = (machine: any) => {
-    const _state = ref(machine.current);
-    const _context = ref((machine as any).context());
+export default function vueRobot<C>(machine: any) {
+    const _state = ref<string>(machine.current);
+    const _context = ref<C>((machine as any).context());
 
     const { setState, state } = {
         setState(newState: any) {

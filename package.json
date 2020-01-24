@@ -1,11 +1,13 @@
 {
   "name": "robot-vue",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "source": "src/index.ts",
   "main": "dist/vue-robot.js",
-  "module": "dist/vue-robot.mjs",
+  "module": "dist/vue-robot.m.js",
+  "umd:main": "dist/vue-robot.umd.js",
   "unpkg": "dist/vue-robot.umd.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch"

@@ -1,0 +1,2 @@
+import t from"vue";import{interpret as e}from"robot3";import{ref as n}from"@vue/composition-api";export default function(o){var c=n(o.current),r=n(o.context()),i={setState:function(e){t.nextTick(function(){c.value=e})},state:c},u=i.setState,a=i.state,s={setContext:function(t){r.value=t},context:r},f=s.setContext;return{context:s.context,send:e(o,function(t){u(t.machine.current),f(t.context)}).send,state:a}}
+//# sourceMappingURL=vue-robot.m.js.map
